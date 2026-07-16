@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡Conversor de Energia⚡</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Conversor de Energia</h1>
+        <p class="subtitle">
+            Converta rapidamente entre diferentes unidades de energia.
+        </p>
+
+        <label>Valor</label>
+
+        <input
+            type="number"
+            id="valor"
+            placeholder="Digite um valor">
+
+        <div class="linha">
+
+            <div class="campo">
+
+                <label>De</label>
+
+                <select id="origem">
+                    <option>Joule (J)</option>
+                    <option>Quilojoule (kJ)</option>
+                    <option>Caloria (cal)</option>
+                    <option>Quilocaloria (kcal)</option>
+                    <option>Watt-hora (Wh)</option>
+                    <option>Quilowatt-hora (kWh)</option>
+                    <option>Elétron-volt (eV)</option>
+                </select>
+
+            </div>
+
+            <button id="trocar">⇄</button>
+
+            <div class="campo">
+
+                <label>Para</label>
+
+                <select id="destino">
+                    <option>Quilojoule (kJ)</option>
+                    <option>Joule (J)</option>
+                    <option>Caloria (cal)</option>
+                    <option>Quilocaloria (kcal)</option>
+                    <option>Watt-hora (Wh)</option>
+                    <option>Quilowatt-hora (kWh)</option>
+                    <option>Elétron-volt (eV)</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <button id="converter">
+            Converter
+        </button>
+
+        <div class="resultado">
+
+            <h3>Resultado</h3>
+
+            <span id="resultado">
+                Aguardando conversão...
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
